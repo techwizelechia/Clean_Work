@@ -366,6 +366,46 @@ border-radius: 9%;
     text-decoration: none;
 }
 
+.Our-services{
+    background-color: gray;
+}
+.best {
+    color: black;
+    font-weight: bold;
+    padding-top: 9%;
+    padding-bottom: 3%;
+    padding-left: 8%;
+    font-size: 3em;
+}
+.sides{
+    background-color: white;
+    margin-left: 8%;
+    width: 38%;
+    border-radius: 2%;
+    border: 1px solid white;
+    display: flex;
+}
+
+.First{
+    margin-left: 7%;
+    margin-top: 7%;
+
+}
+.image2 {
+  width: 50%;
+  height:80%;
+  border-radius: 3%;
+}
+
+.para10{
+    color: white;
+    background-color: #08b7f1;
+    font-size: 0.9rem;
+    width: 50%;
+    padding: 2%;
+}
+
+
 
 
 /* Responsive Adjustments */
