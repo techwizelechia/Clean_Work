@@ -429,7 +429,7 @@ color: #08b7f1;
 
 }
 .but4{
-    
+
     margin-left: 25%;
     margin-top: 13%;
     background-color: #08b7f1;
@@ -447,7 +447,9 @@ color: #08b7f1;
 
 .container-flex{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 /* Responsive Adjustments */
