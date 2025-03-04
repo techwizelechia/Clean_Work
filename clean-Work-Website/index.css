@@ -367,13 +367,12 @@ border-radius: 9%;
 }
 
 .Our-services{
-    background-color: gray;
+    background-color: #F0F8FF;
 }
 .best {
     color: black;
     font-weight: bold;
-    padding-top: 9%;
-    padding-bottom: 3%;
+    padding-top: 8%;
     padding-left: 8%;
     font-size: 3em;
 }
@@ -384,13 +383,16 @@ border-radius: 9%;
     border-radius: 2%;
     border: 1px solid white;
     display: flex;
+    position: relative;
+    min-height: 200px;
+    height: auto;
 }
 
 .First{
     margin-left: 6%;
     margin-top: 6%;
     margin-bottom: 6%;
-    background-color: #08b7f1;
+    background-color:#4F83D1;
     width: 60%;
     height: 200px;
     border-radius: 4%  ;
@@ -399,6 +401,7 @@ border-radius: 9%;
   width: 100%;
   height:80%;
   border-radius: 3% 3% 0% 0%;
+  cursor: pointer;
 }
 
 .para10{
@@ -428,28 +431,77 @@ padding: 0;
 color: #08b7f1;
 
 }
-.but4{
-
-    margin-left: 25%;
-    margin-top: 13%;
-    background-color: #08b7f1;
-    padding: 20px 24px;
+.but4 {
+    position: absolute;
+    bottom: 10%;
+    right: 10px;
+    background-color:#4F83D1;
+    padding: 20px 16px; /* Adjust padding for responsiveness */
     color: white;
-    font-size: 16px;
+    font-size: 18px; /* Slightly smaller for better responsiveness */
     font-weight: bold;
-    border: 3px solid white;
+    border: 2px solid white;
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.5s;
-    width: 10rem;
+    width: auto; /* Allows flexibility */
+    min-width: 9rem; /* Ensures a minimum width */
     text-align: center;
+    display: flex;
+}
+.but4:hover{
+    background-color:#7CB8EB;
 }
 
+.text-container {
+    display: flex;
+    overflow: hidden; /* Ensures text stays inside */
+    position: relative;
+}
+
+.moving-text {
+    display: flex;
+    white-space: nowrap;
+}
+
+button:hover .moving-text {
+    animation: moveText 2s linear infinite;
+}
+
+@keyframes moveText {
+    from {
+        transform: translateX(50%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Duplicating text to create a seamless loop effect */
+.moving-text span {
+    padding-right: 10%; /* Spacing between repeated text */
+}
+
+#myImage2:hover{
+    content: url("images/images/services/woman-holding-rag-detergent-cleaning-cooker.jpg");
+}
+
+#myImage3:hover{
+    content: url("images/images/services/man-polishing-car-inside.jpg");
+}
+
+#myImage4:hover{
+    content: url("images/images/services/close-up-mop-cleaning-industrial-plant-floor.jpg");
+}
 .container-flex{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically (if needed) */
+    /* gap: 2px; Adds space around the divs */
+    flex-wrap: wrap; /* Allows responsiveness */
+    padding: 20px 20px;
+    height: 100vh; /* Full height of the screen */
+    margin-left: -6%;
 }
 
 /* Responsive Adjustments */
@@ -459,10 +511,13 @@ color: #08b7f1;
         text-align: center;
         align-items: center;
     }
-}
-
-/* Responsive: Smaller screens */
-@media (max-width: 768px) {
+    .but4 {
+        bottom: 5px;
+        right: 5px;
+        font-size: 12px;
+        padding: 10px 14px;
+        min-width: 6rem;
+    }
     .button1 {
         width: 100%;
         text-align: center;
@@ -470,5 +525,7 @@ color: #08b7f1;
         padding: 10px 20px;
     }
 }
+
+
 
 

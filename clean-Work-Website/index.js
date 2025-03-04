@@ -16,4 +16,14 @@
         // Change background every 3 seconds
         setInterval(changeBackground, 3000);
 
+        const img = document.getElementById("myImage");
 
+        img.addEventListener("mouseover", function () {
+            img.src = "images/images/services/person-taking-care-office.jpg"; // Change to the new image
+        });
+
+        img.addEventListener("mouseout", function () {
+            img.src = "images/images/services/people-taking-care-office-cleaning.jpg"; // Revert to the original image
+        });
+
+        
