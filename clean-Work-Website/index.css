@@ -12,7 +12,7 @@
     font-size: 0.9rem;
     justify-content: space-between;  /* Space out the items */
     align-items: center;            /* Vertically align items */
-    background-color: rgb(67, 166, 233);
+    background-color:#7CB8EB;
     padding: 15px 20px;
     flex-wrap: wrap;  /* Allows items to wrap if there is not enough space */
 }
@@ -146,8 +146,8 @@ text-decoration: none;
 
 /* Hover Effect */
 .button1:hover {
-    background-color: #08b7f1; /* Light Blue */
-    border:1px solid #08b7f1;
+    background-color:#7CB8EB; /* Light Blue */
+    border:1px solid #7CB8EB;
 }
 
 /* Background Slider */
@@ -161,7 +161,7 @@ text-decoration: none;
     background-position: center;
     transition: opacity 8s ease-in-out;
     z-index: -1;
-    background: rgba(72, 226, 231, 0.4); /* Semi-transparent blue overlay */
+    background: #88A3CC; /* Semi-transparent blue overlay */
 }
 
 .background-slider::before {
@@ -351,7 +351,7 @@ position: relative; /* Ensures child absolute positioning is relative to this */
 position: absolute;
 bottom: 0; /* Moves to bottom */
 right: 0;  /* Moves to right */
-background-color: rgb(96, 233, 243);
+background-color:#7CB8EB;
 color: white;
 width: 35%;
 padding: 20px;
@@ -502,6 +502,140 @@ button:hover .moving-text {
     padding: 20px 20px;
     height: 100vh; /* Full height of the screen */
     margin-left: -6%;
+}
+
+.opinion{
+    background-color:#6995D8;
+}
+
+.Know-them{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    padding-bottom: 7%;
+}
+
+.opinion h1 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+}
+.customers{
+    background-color:#7CB8EB;
+    width: 26%;
+    border-radius: 4%;
+    padding: 2%;
+}
+.customer1{
+    display: flex;
+    margin-bottom: 7%;
+}
+
+.customer1 img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.customer1 h2{
+    color: white;
+    margin-left: 10%;
+    font-size: 2rem;
+}
+
+.customer1 p {
+    color:#4F83D1;
+    margin-left: 10%;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.coment{
+    color: white;
+    font-size: 1rem;
+}
+
+.companies{
+    background-color: white;
+}
+.companies h1{
+    position: absolute;
+    color:black;
+    font-size: 1.9rem;
+    background-color: white;
+    border-radius: 30px;
+    width: 25%;
+    text-align: center;
+    padding: 1%;
+    left: 36%;
+    margin-top: -27px;
+    box-shadow: 5px 5px 10px rgb(196, 193, 193);
+}
+
+.firms{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 5%;
+}
+.firms img{
+    width: 12%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.firms img:hover {
+    transform: scale(1.1);
+}
+
+.Hardship{
+    background-color: #7CB8EB;
+}
+
+.footer-content{
+    display: flex;
+
+}
+
+.footer-nav{
+    margin-top: 4%;
+    margin-left: 3%;
+}
+
+.footer-nav ol{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 20px;
+}
+
+ .footer-nav ol a {
+    color: white;
+    text-decoration: none;
+}
+
+li:hover a {
+    color: #4F83D1;
+    transition: 0.3s ease-in;
+}
+.footer-links{
+    display: flex;
+    justify-content: center;
+    gap: 9%;
+    color: white;
+    margin-top: 3%;
+}
+
+.our-services5 h1 {
+margin-bottom: 10%;
+}
+
+.our-services5 a{
+    color: white;
+    text-decoration: none;
 }
 
 /* Responsive Adjustments */
