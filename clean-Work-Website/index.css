@@ -579,7 +579,7 @@ button:hover .moving-text {
 .firms{
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 20px;
     padding: 5%;
 }
 .firms img{
@@ -621,12 +621,18 @@ li:hover a {
     color: #4F83D1;
     transition: 0.3s ease-in;
 }
+
 .footer-links{
     display: flex;
     justify-content: center;
-    gap: 9%;
+    gap: 6%;
     color: white;
     margin-top: 3%;
+    padding-bottom: 10%;
+}
+
+.footer-links p:hover a{
+    color: #4F83D1;
 }
 
 .our-services5 h1 {
@@ -636,6 +642,42 @@ margin-bottom: 10%;
 .our-services5 a{
     color: white;
     text-decoration: none;
+    line-height: 1.8 ;
+}
+
+.time-of-service h1 {
+    margin-bottom: 10%;
+    font-size: 2rem;
+}
+
+.time-of-service p {
+    margin-bottom: 1.0rem;
+    line-height: 1.8;
+}
+
+.office-contact h1{
+    margin-bottom: 10%;
+    font-size: 2rem;
+}
+
+.office-contact p {
+    margin-bottom: 1.0rem;
+    line-height: 1.2;
+}
+
+.office-contact a{
+    text-decoration: none;
+    color: white;
+}
+
+.services-provided {
+    padding-top: 4rem;
+}
+
+.services-provided a{
+    text-decoration: none;
+    color: white;
+    line-height: 1.8;
 }
 
 /* Responsive Adjustments */
