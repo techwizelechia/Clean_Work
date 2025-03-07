@@ -255,14 +255,15 @@ ul {
 .reference-links{
     display: flex;
     justify-content: space-around;
-    gap: 45%;
-    padding-top: 11%;
+    padding-top: 10%;
+    gap: 32%;
     color: white;
 }
 
 .reference-links h1{
     font-weight: bold;
     font-size: 3rem;
+
 }
 .reference-links a{
     text-decoration: none;
@@ -341,6 +342,198 @@ a:hover {
 
 }
 
+.Our-services{
+    background-color: #F0F8FF;
+}
+.best {
+    color: black;
+    font-weight: bold;
+    padding-top: 8%;
+    padding-left: 8%;
+    font-size: 3em;
+}
+.sides{
+    background-color: white;
+    margin-left: 8%;
+    width: 38%;
+    border-radius: 2%;
+    border: 1px solid white;
+    display: flex;
+    position: relative;
+    min-height: 200px;
+    height: auto;
+}
+
+.First{
+    margin-left: 6%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    background-color:#4F83D1;
+    width: 60%;
+    height: 200px;
+    border-radius: 4%  ;
+}
+.image2 {
+  width: 100%;
+  height:80%;
+  border-radius: 3% 3% 0% 0%;
+  cursor: pointer;
+}
+
+.para10{
+    color: white;
+    font-size: 0.8rem;
+    padding: 4%;
+}
+
+.second{
+    padding-left: 4%;
+    margin-top: 7%;
+}
+
+.office a {
+text-decoration: none;
+color: #08b7f1;
+margin-bottom: 10%;
+}
+
+.mate{
+    margin-top: 10%;
+    color: grey;
+}
+.fasolid{
+margin-top: 24%;
+padding: 0;
+color: #08b7f1;
+
+}
+.but4 {
+    position: absolute;
+    bottom: 10%;
+    right: 10px;
+    background-color:#4F83D1;
+    padding: 20px 16px; /* Adjust padding for responsiveness */
+    color: white;
+    font-size: 18px; /* Slightly smaller for better responsiveness */
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.5s;
+    width: auto; /* Allows flexibility */
+    min-width: 9rem; /* Ensures a minimum width */
+    text-align: center;
+    display: flex;
+}
+.but4:hover{
+    background-color:#7CB8EB;
+}
+
+.text-container {
+    display: flex;
+    overflow: hidden; /* Ensures text stays inside */
+    position: relative;
+}
+
+.moving-text {
+    display: flex;
+    white-space: nowrap;
+}
+
+button:hover .moving-text {
+    animation: moveText 2s linear infinite;
+}
+
+@keyframes moveText {
+    from {
+        transform: translateX(50%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Duplicating text to create a seamless loop effect */
+.moving-text span {
+    padding-right: 10%; /* Spacing between repeated text */
+}
+
+#myImage2:hover{
+    content: url("images/images/services/woman-holding-rag-detergent-cleaning-cooker.jpg");
+}
+
+#myImage3:hover{
+    content: url("images/images/services/man-polishing-car-inside.jpg");
+}
+
+#myImage4:hover{
+    content: url("images/images/services/close-up-mop-cleaning-industrial-plant-floor.jpg");
+}
+.container-flex{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically (if needed) */
+    /* gap: 2px; Adds space around the divs */
+    flex-wrap: wrap; /* Allows responsiveness */
+    padding: 20px 20px;
+    height: 100vh; /* Full height of the screen */
+    margin-left: -6%;
+}
+
+.opinion{
+    background-color:#6995D8;
+}
+
+.Know-them{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    padding-bottom: 7%;
+}
+
+.opinion h1 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+}
+.customers{
+    background-color:#7CB8EB;
+    width: 26%;
+    border-radius: 4%;
+    padding: 2%;
+}
+.customer1{
+    display: flex;
+    margin-bottom: 7%;
+}
+
+.customer1 img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.customer1 h2{
+    color: white;
+    margin-left: 10%;
+    font-size: 2rem;
+}
+
+.customer1 p {
+    color:#4F83D1;
+    margin-left: 10%;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.coment{
+    color: white;
+    font-size: 1rem;
+}
 
 .companies{
     background-color: white;
