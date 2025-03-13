@@ -256,7 +256,7 @@ ul {
     display: flex;
     justify-content: space-around;
     padding-top: 10%;
-    gap: 32%;
+    gap: 26%;
     color: white;
 }
 
@@ -563,6 +563,20 @@ button:hover .moving-text {
 
 .firms img:hover {
     transform: scale(1.1);
+}
+
+.caming-soon-timer{
+    text-align: center;
+}
+
+.caming-soon-timer h2 {
+    font-size: 3.3rem;
+}
+
+.caming-soon-timer p{
+    color: gray;
+    padding-bottom: 10%;
+    font-size: 1.5rem;
 }
 
 .Hardship{

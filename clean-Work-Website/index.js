@@ -25,5 +25,3 @@
         img.addEventListener("mouseout", function () {
             img.src = "images/images/services/people-taking-care-office-cleaning.jpg"; // Revert to the original image
         });
-
-        
