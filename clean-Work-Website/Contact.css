@@ -1,0 +1,726 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* General header styling */
+.top-header {
+    display: flex;
+    font-size: 0.9rem;
+    justify-content: space-between;  /* Space out the items */
+    align-items: center;            /* Vertically align items */
+    background-color:#7CB8EB;
+    padding: 15px 20px;
+    flex-wrap: wrap;  /* Allows items to wrap if there is not enough space */
+}
+
+/* Styling for the first p (House) */
+.house {
+    color: white;
+    margin-left: 5%;
+    padding-left: 2rem;  /* Adjust padding for better alignment */
+}
+
+/* Styling for the second p (Time) */
+.time {
+    color: white;
+    position: absolute;
+    margin-left: 23%;
+
+}
+
+/* Styling for the third p (WhatsApp) */
+.wasupp {
+    color: white;
+    margin-left: 82%;
+    position: absolute;
+}
+
+/* Styling the anchor in WhatsApp */
+.wasupp a {
+    color: white;
+    text-decoration: none;  /* Remove underline */
+    font-weight: bold;
+}
+
+/* Styling for icons */
+i {
+    margin-right: 0.4rem;
+}
+
+/* Bold for days */
+.day {
+    font-weight: bold;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .time {
+        display: none;
+    }
+    .house {
+        padding-left: 0;
+        font-size: 0.9rem;
+    }
+    i {
+        margin-right: 0.1rem;
+    }
+
+    .wasupp {
+        padding-left: 0.5rem;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .time{
+        display: inline;
+    }
+    i {
+        margin-right: 0.5rem;
+    }
+}
+
+.backImage {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background:
+        linear-gradient(rgba(64, 119, 221, 0.5), rgba(0, 0, 255, 0.2)),
+        url(images/images/high-angle-woman-cleaning-floors.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/* navbar styling  */
+.navbar{
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    min-height: 80px;
+}
+
+
+/* Logo styling */
+.logo{
+    display: flex;
+    margin-left: 6.9rem;
+    margin-top: 1.5rem;
+}
+
+.logo-image{
+    background-color: white;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 3rem;
+}
+
+.logo h1 a {
+color: white;
+position: absolute;
+top: 3%;
+margin-left: 1rem;
+text-decoration: none;
+}
+
+/* Styled Button */
+.button1 {
+    padding: 16px 22px;
+    background-color:transparent; /* Blue */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 9rem;
+    margin-left: 84%;
+    text-align: center;
+    position: absolute;
+    top: 0%;
+}
+
+/* Hover Effect */
+.button1:hover {
+    background-color:#7CB8EB; /* Light Blue */
+    border:1px solid #7CB8EB;
+}
+
+/* Background Slider */
+.background-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 8s ease-in-out;
+    z-index: -1;
+    background: #88A3CC; /* Semi-transparent blue overlay */
+}
+
+.background-slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(87, 155, 233, 0.4); /* Semi-transparent blue overlay */
+    z-index: 1;
+  }
+/* Navigation Bar */
+
+ul {
+    position: absolute;
+    top: 0.0rem;
+    left: 50%;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px; /* Space between items */
+}
+
+.nav-links li {
+    position: relative;
+}
+
+/* Main Menu Items */
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+    color:rgb(101, 101, 230);
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    text-align: center;
+    position:absolute;
+    top: 100%;
+    background:white;
+    list-style: none;
+    width: 9em;
+    border-radius: 5px;
+    display: none; /* Hidden by default */
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000; /* Ensures it's above other elements */
+}
+
+/* Dropdown Links */
+.dropdown-menu a {
+    padding: 10px;
+    display: block;
+    color:rgb(109, 92, 92);
+    font-size: 1.2rem;
+    transition: background 0.1s ease;
+}
+
+.dropdown-menu a:hover {
+    color: rgb(100, 100, 238);
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.reference-links{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10%;
+    gap: 26%;
+    color: white;
+}
+
+.reference-links h1{
+    font-weight: bold;
+    font-size: 3rem;
+
+}
+.reference-links a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(51, 90, 218);
+}
+
+.Card-display{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+.Card-display img{
+    width: 80%;
+    border-radius: 6%;
+    margin-left: 15%;
+}
+
+.Card-display h1{
+    color: black;
+    font-size: 3rem;
+    margin-bottom: 4%;
+}
+
+.Card-display p {
+    width: 60%;
+    color: rgb(99, 96, 96);
+}
+
+.butAbout{
+    padding: 20px 24px;
+    background-color:rgb(77, 77, 226);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: center;
+    border: none;
+    margin-top: 40px;
+    width:10rem ;
+}
+
+.main-testimony{
+    background-color: #88A3CC;
+}
+
+.meet{
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-left: 7%;
+    padding-top: 6%;
+    margin-bottom: 2%;
+}
+.test-them {
+    display: flex;
+    justify-content: space-around;
+}
+
+.test-them img {
+    width: 28%;
+    height: 80%;
+    margin-left: 10%;
+    border-radius: 5%;
+    margin-bottom: 10%;
+    margin-right: 0px;
+
+}
+
+.Our-services{
+    background-color: #F0F8FF;
+}
+.best {
+    color: black;
+    font-weight: bold;
+    padding-top: 8%;
+    padding-left: 8%;
+    font-size: 3em;
+}
+.sides{
+    background-color: white;
+    margin-left: 8%;
+    width: 38%;
+    border-radius: 2%;
+    border: 1px solid white;
+    display: flex;
+    position: relative;
+    min-height: 200px;
+    height: auto;
+}
+
+.First{
+    margin-left: 6%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    background-color:#4F83D1;
+    width: 60%;
+    height: 200px;
+    border-radius: 4%  ;
+}
+.image2 {
+  width: 100%;
+  height:80%;
+  border-radius: 3% 3% 0% 0%;
+  cursor: pointer;
+}
+
+.para10{
+    color: white;
+    font-size: 0.8rem;
+    padding: 4%;
+}
+
+.second{
+    padding-left: 4%;
+    margin-top: 7%;
+}
+
+.office a {
+text-decoration: none;
+color: #08b7f1;
+margin-bottom: 10%;
+}
+
+.mate{
+    margin-top: 10%;
+    color: grey;
+}
+.fasolid{
+margin-top: 24%;
+padding: 0;
+color: #08b7f1;
+
+}
+.but4 {
+    position: absolute;
+    bottom: 10%;
+    right: 10px;
+    background-color:#4F83D1;
+    padding: 20px 16px; /* Adjust padding for responsiveness */
+    color: white;
+    font-size: 18px; /* Slightly smaller for better responsiveness */
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.5s;
+    width: auto; /* Allows flexibility */
+    min-width: 9rem; /* Ensures a minimum width */
+    text-align: center;
+    display: flex;
+}
+.but4:hover{
+    background-color:#7CB8EB;
+}
+
+.text-container {
+    display: flex;
+    overflow: hidden; /* Ensures text stays inside */
+    position: relative;
+}
+
+.moving-text {
+    display: flex;
+    white-space: nowrap;
+}
+
+button:hover .moving-text {
+    animation: moveText 2s linear infinite;
+}
+
+@keyframes moveText {
+    from {
+        transform: translateX(50%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Duplicating text to create a seamless loop effect */
+.moving-text span {
+    padding-right: 10%; /* Spacing between repeated text */
+}
+
+#myImage2:hover{
+    content: url("images/images/services/woman-holding-rag-detergent-cleaning-cooker.jpg");
+}
+
+#myImage3:hover{
+    content: url("images/images/services/man-polishing-car-inside.jpg");
+}
+
+#myImage4:hover{
+    content: url("images/images/services/close-up-mop-cleaning-industrial-plant-floor.jpg");
+}
+.container-flex{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically (if needed) */
+    /* gap: 2px; Adds space around the divs */
+    flex-wrap: wrap; /* Allows responsiveness */
+    padding: 20px 20px;
+    height: 100vh; /* Full height of the screen */
+    margin-left: -6%;
+}
+
+.opinion{
+    background-color:#6995D8;
+}
+
+.Know-them{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    padding-bottom: 7%;
+}
+
+.opinion h1 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+}
+.customers{
+    background-color:#7CB8EB;
+    width: 26%;
+    border-radius: 4%;
+    padding: 2%;
+}
+.customer1{
+    display: flex;
+    margin-bottom: 7%;
+}
+
+.customer1 img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.customer1 h2{
+    color: white;
+    margin-left: 10%;
+    font-size: 2rem;
+}
+
+.customer1 p {
+    color:#4F83D1;
+    margin-left: 10%;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.coment{
+    color: white;
+    font-size: 1rem;
+}
+
+.companies{
+    background-color: white;
+}
+.companies h1{
+    position: absolute;
+    color:black;
+    font-size: 1.9rem;
+    background-color: white;
+    border-radius: 30px;
+    width: 25%;
+    text-align: center;
+    padding: 1%;
+    left: 36%;
+    margin-top: -27px;
+    box-shadow: 5px 5px 10px rgb(196, 193, 193);
+}
+
+.firms{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 5%;
+}
+.firms img{
+    width: 12%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.firms img:hover {
+    transform: scale(1.1);
+}
+
+.caming-soon-timer{
+    text-align: center;
+}
+
+.caming-soon-timer h2 {
+    font-size: 3.3rem;
+}
+
+.caming-soon-timer p{
+    color: gray;
+    padding-bottom: 10%;
+    font-size: 1.5rem;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ .contact-form1 h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-row input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    margin-top: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.Hardship{
+    background-color: #7CB8EB;
+}
+
+.footer-content{
+    display: flex;
+
+}
+
+.footer-nav{
+    margin-top: 4%;
+    margin-left: 3%;
+}
+
+.footer-nav ol{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 20px;
+}
+
+ .footer-nav ol a {
+    color: white;
+    text-decoration: none;
+}
+
+li:hover a {
+    color: #4F83D1;
+    transition: 0.3s ease-in;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+    gap: 6%;
+    color: white;
+    margin-top: 3%;
+    padding-bottom: 10%;
+}
+
+.footer-links p:hover a{
+    color: #4F83D1;
+}
+
+.our-services5 h1 {
+margin-bottom: 10%;
+}
+
+.our-services5 a{
+    color: white;
+    text-decoration: none;
+    line-height: 1.8 ;
+}
+
+.time-of-service h1 {
+    margin-bottom: 10%;
+    font-size: 2rem;
+}
+
+.time-of-service p {
+    margin-bottom: 1.0rem;
+    line-height: 1.8;
+}
+
+.office-contact h1{
+    margin-bottom: 10%;
+    font-size: 2rem;
+}
+
+.office-contact p {
+    margin-bottom: 1.0rem;
+    line-height: 1.2;
+}
+
+.office-contact a{
+    text-decoration: none;
+    color: white;
+}
+
+.services-provided {
+    padding-top: 4rem;
+}
+
+.services-provided a{
+    text-decoration: none;
+    color: white;
+    line-height: 1.8;
+}
+
