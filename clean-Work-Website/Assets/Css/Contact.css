@@ -91,7 +91,7 @@ i {
     height: 60vh;
     background:
         linear-gradient(rgba(64, 119, 221, 0.5), rgba(0, 0, 255, 0.2)),
-        url(images/images/high-angle-woman-cleaning-floors.jpg);
+        url(../images/high-angle-woman-cleaning-floors.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -255,14 +255,15 @@ ul {
 .reference-links{
     display: flex;
     justify-content: space-around;
-    gap: 45%;
-    padding-top: 11%;
+    padding-top: 10%;
+    gap: 43%;
     color: white;
 }
 
 .reference-links h1{
     font-weight: bold;
     font-size: 3rem;
+
 }
 .reference-links a{
     text-decoration: none;
@@ -273,95 +274,129 @@ a:hover {
     color: rgb(51, 90, 218);
 }
 
-.Card-display{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 8%;
-    padding-bottom: 8%;
-
+.my-side{
+    background-color: rgb(248, 244, 244);
+    padding-bottom: 14%;
 }
 
-.Card-display img{
-    width: 80%;
-    border-radius: 6%;
-    margin-left: 15%;
-
+.hard-days{
+    margin-left: 9%;
 }
 
-.Card-display h1{
-    color: black;
+.hard-days h1{
+    padding-top: 9%;
+    width: 30%;
     font-size: 3rem;
-    margin-bottom: 4%;
+    font-weight: bold;
+    padding-bottom: 1%;
 }
 
-.Card-display p {
-    width: 60%;
-    color: rgb(99, 96, 96);
+.hard-days p{
+    width: 33%;
+    color: grey;
+    padding-bottom: 3%;
 }
 
-.butAbout{
-    padding: 20px 24px;
+.contact-info{
+    background-color: white;
+    width: 33%;
+    margin-left: 9%;
+    padding: 1%;
+    border-radius: 5%;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h1{
+    margin-bottom: 3%;
+    margin-top: 5%;
+    font-size:2rem ;
+    padding-left: 1%;
+}
+
+.contact-info p{
+    padding: 2%;
+    font-size: 1.6rem;
+    color: grey;
+}
+
+.contact-info a{
+    text-decoration: none;
+    color: grey;
+
+}
+
+.contact-info a:hover {
+    cursor: pointer;
+    color: #0056b3;
+}
+
+.contact-info i{
+    color: #0056b3;
+    padding-right: 1%;
+}
+
+.last-stance{
+    margin-bottom: 6%;
+}
+
+form {
+    margin-top: -38%;
+    background: #fff;
+    padding: 20px;
+    max-width: 500px;
+    margin-left: 50%;
+    border-radius: 5%;
+    box-shadow:  15px 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+ .contact-form1 h1 {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.form-row input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+}
+
+form button {
+    padding: 20px 20px;
     background-color:rgb(77, 77, 226);
-    color: white;
+    color:white;
     font-size: 16px;
     font-weight: bold;
+    border: none;
     border-radius: 3rem;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.3s;
+    width: 16rem;
     text-align: center;
-    border: none;
-    margin-top: 40px;
-    width:10rem ;
+    margin: 5% 24% 6% 24%;
 }
 
-.main-testimony{
-    background-color: #F0F8FF;
-}
-
-.test-them {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    
-}
-
-.test-them img {
-    width: 30%;
-    border-radius: 5%;
-
-}
-
-
-.companies{
-    background-color: white;
-}
-.companies h1{
-    position: absolute;
-    color:black;
-    font-size: 1.9rem;
-    background-color: white;
-    border-radius: 30px;
-    width: 25%;
-    text-align: center;
-    padding: 1%;
-    left: 36%;
-    margin-top: -27px;
-    box-shadow: 5px 5px 10px rgb(196, 193, 193);
-}
-
-.firms{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 5%;
-}
-.firms img{
-    width: 12%;
-    transition: transform 0.3s ease-in-out;
-}
-
-.firms img:hover {
-    transform: scale(1.1);
+button:hover {
+    background-color: #5d90c7;
 }
 
 .Hardship{

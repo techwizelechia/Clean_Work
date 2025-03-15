@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Google Fonts for Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Page 404.css">
-    <title>Page 404</title>
+    <link rel="stylesheet" href="../Css/Contact.css">
+    <title>Contact</title>
 </head>
 <body>
     <div class="backImage">
@@ -25,7 +25,7 @@
 
             <div class="logo">
                 <div class="logo-image">
-                    <img src="images/images/bubbles.png" alt="Clean-Work Logo">
+                    <img src="../images/bubbles.png" alt="Clean-Work Logo">
                 </div>
                 <h1><a href="http://">Clean Work</a></h1>
             </div>
@@ -45,23 +45,51 @@
             <button type="button" class="button1">Get started</button>
             <main class="reference-links">
                 <div>
-                    <h1>Page 404</h1>
+                    <h1>Contact</h1>
                 </div>
                 <div>
                     <p><a href="index.html">Home</a>&nbsp;/&nbsp;
-                    <a href="About us.html">Page 404</a></p>
+                    <a href="About us.html">Contact</a></p>
                 </div>
             </main>
         </nav>
     </div>
-    <aside>
-        <div class="error-404">
-            <h1>404</h1>
-            <h2>Page Not Found</h2>
-            <p>The page you are looking for doesn't exist or has been moved.</p>
+    <aside class="my-side">
+       <div class="hard-days">
+         <h1>We're happy to help</h1>
+         <p>Best Cleaning Service is ready to serve you. Clean Work is a professional website layout for your business.</p>
+       </div>
+       <div class="contact-info">
+         <h1>Contact Information</h1>
+         <p><i class="fa-solid fa-location-dot"></i>Akershusstranda 20, 0150 Oslo, Norway</p>
+         <p><i class="fa-solid fa-phone"></i><a href="">
+            110-220-9800</a></p>
+         <p class="last-stance"><i class="fa-solid fa-envelope"></i><a href="">
+            info@company.com</a></p>
+       </div>
+       <div class="contact-form1">
+        <form action="" method="post">
+            <h1>Get a Free Quotation</h1>
 
-            <button type="button">Back to Home</button>
-        </div>
+            <div class="form-row">
+                <input type="text" id="name" name="name" required placeholder="John Walker">
+                <input type="email" id="email" name="email" required placeholder="yours@gmail.com">
+            </div>
+
+            <select id="subject" name="subject">
+                <option value="" disabled selected>Select Service</option>
+                <option value="house_cleaning">House Cleaning</option>
+                <option value="service_type">Service Type</option>
+                <option value="car_washing">Car Washing</option>
+                <option value="office_cleaning">Office Cleaning</option>
+                <option value="factory_cleaning">Factory Cleaning</option>
+            </select>
+
+            <textarea id="message" name="message" rows="5" placeholder="Comment (optional)" required></textarea>
+
+            <button type="submit">Submit Request</button>
+        </form>
+       </div>
     </aside>
 
 
@@ -69,7 +97,7 @@
           <div class="footer-content">
               <div class="logo">
                   <div class="logo-image">
-                      <img src="images/images/bubbles.png" alt="Clean-Work Logo">
+                      <img src="../images/bubbles.png" alt="Clean-Work Logo">
                   </div>
               </div>
               <nav class="footer-nav">
@@ -112,5 +140,6 @@
               </div>
           </div>
         </footer>
+        <script src="index.js"></script>
 </body>
 </html>

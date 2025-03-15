@@ -91,7 +91,7 @@ i {
     height: 60vh;
     background:
         linear-gradient(rgba(64, 119, 221, 0.5), rgba(0, 0, 255, 0.2)),
-        url(images/images/high-angle-woman-cleaning-floors.jpg);
+        url(../images/high-angle-woman-cleaning-floors.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -256,7 +256,7 @@ ul {
     display: flex;
     justify-content: space-around;
     padding-top: 10%;
-    gap: 32%;
+    gap: 26%;
     color: white;
 }
 
@@ -563,6 +563,20 @@ button:hover .moving-text {
 
 .firms img:hover {
     transform: scale(1.1);
+}
+
+.caming-soon-timer{
+    text-align: center;
+}
+
+.caming-soon-timer h2 {
+    font-size: 3.3rem;
+}
+
+.caming-soon-timer p{
+    color: gray;
+    padding-bottom: 10%;
+    font-size: 1.5rem;
 }
 
 .Hardship{
