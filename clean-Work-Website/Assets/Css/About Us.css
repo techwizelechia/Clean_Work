@@ -318,19 +318,50 @@ a:hover {
     background-color: #F0F8FF;
 }
 
+.meet{
+    padding-left: 8%;
+    font-size: 3rem;
+    padding-top: 7%;
+    padding-bottom: 2%;
+}
 .test-them {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
+   display: flex;
+   padding-bottom: 7%;
 }
 
 .test-them img {
-    width: 30%;
+    width: 100%;
     border-radius: 5%;
-
+    margin-left: 40%;
+    height:35vh;
 }
 
+.testimony1{
+   background-color: white;
+   width: 18%;
+   margin-left: 10%;
+   border-radius: 8%;
+   padding: 2%;
+}
+
+.testimony1 h1{
+    margin-bottom: 4%;
+}
+
+.testimony1 p{
+    color: gray;
+    margin-bottom: 10%;
+}
+
+hr{
+    color: rgb(230, 223, 223);
+    margin-bottom: 14%;
+}
+.testimony1 a{
+    text-decoration: none;
+    color: gray;
+    margin-top: 2%;
+}
 
 .companies{
     background-color: white;
