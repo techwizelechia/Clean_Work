@@ -484,3 +484,18 @@ margin-bottom: 10%;
     line-height: 1.8;
 }
 
+@media (min-width: 375px), (max-width: 667px) {
+   .nav-links , .button1 {
+    display: none;
+   }
+   .wasupp{
+    margin-left: 62%;
+   }
+   .house{
+    margin-left: 0;
+   }
+   .logo{
+    margin-left: 3%;
+   }
+
+}
